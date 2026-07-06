@@ -79,8 +79,8 @@ build_exe.bat
 
 ```text
 Release v1.0.0
-├─ 历史粘贴板_轻量版.zip
-└─ OCR组件.zip
+├─ history-clipboard-lite-v1.0.0.zip
+└─ history-clipboard-ocr-runtime-v1.0.0.zip
 ```
 
 不要把自己的剪贴板历史数据、图片缓存、配置文件或备份文件上传到公开仓库。
