@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.zip
+*.log
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+测试保存文件夹/
+开发日志/
+clipboard_history_config.json
+history_index.json
+images/
+thumbs/

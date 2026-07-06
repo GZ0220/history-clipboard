@@ -1,0 +1,5 @@
+Pillow
+PyInstaller
+pystray
+rapidocr
+onnxruntime
