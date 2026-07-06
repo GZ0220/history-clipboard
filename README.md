@@ -48,45 +48,9 @@
 - 发送软件给别人时，只发送解压后的程序文件夹，不要发送自己的数据文件夹。
 - 如果记录了敏感内容，可以在软件中删除对应历史，或开启敏感文字过滤。
 
-## 开发者说明
+## 问题反馈
 
-项目结构：
-
-```text
-clipboard_history/        应用源码
-assets/                   图标和本地视觉资源
-docs/                     需求、设计、打包和质量说明
-tests/                    自动化测试
-main.py                   主程序入口
-ocr_worker.py             可选 OCR 组件入口
-build_exe.bat             Windows 打包脚本
-run_app.bat               开发运行脚本
-*.spec                    PyInstaller 打包配置
-requirements-dev.txt      开发和打包依赖
-```
-
-开发运行：
-
-```powershell
-python -m pip install -r requirements-dev.txt
-python main.py
-```
-
-检查与测试：
-
-```powershell
-python -c "from pathlib import Path; files=[Path('main.py'),Path('ocr_worker.py')]+list(Path('clipboard_history').glob('*.py'))+list(Path('tests').glob('*.py')); [compile(p.read_text(encoding='utf-8'), str(p), 'exec') for p in files]; print('syntax ok')"
-python -B -m unittest discover -s tests
-python main.py --self-test
-```
-
-打包：
-
-```powershell
-build_exe.bat
-```
-
-以下内容不进入代码仓库：`dist/`、`build/`、用户历史数据、测试保存文件夹、本机配置文件和打包压缩包。
+如果软件无法启动、图片无法显示、OCR 组件无法识别，或者出现明显卡顿，可以在 GitHub Issues 中反馈，并尽量说明 Windows 版本、软件版本、操作步骤和截图。
 
 ## 许可证
 
